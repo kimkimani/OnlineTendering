@@ -1,0 +1,187 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                >
+
+    <ImageView
+        android:id="@+id/ivRegRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/register"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ivRegRegister">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/etRegFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:hint="*First Name"
+                android:inputType="textPersonName"
+                />
+
+            <EditText
+                android:id="@+id/etRegLastName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:layout_marginTop="7dp"
+                android:hint="*Last Name"
+                android:inputType="textPersonName"/>
+
+            <EditText
+                android:id="@+id/etRegPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:layout_marginTop="7dp"
+                android:hint="Phone Number: 0277------"
+                android:inputType="phone"
+                android:maxLength="10"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="7dp"
+                android:layout_marginTop="7dp">
+
+                <TextView
+                    android:id="@+id/tvRegGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="*Gender:"
+                    android:textSize="15sp"/>
+
+                <CheckBox
+                    android:id="@+id/cbRegMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tvRegGender"
+                    android:checked="false"
+                    android:text="Male"
+                    />
+
+                <CheckBox
+                    android:id="@+id/cbRegFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/cbRegMale"
+                    android:checked="false"
+                    android:text="Female"
+                    />
+                <!--/RadioGroup-->
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:id="@+id/tvDOB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date Of Birth: "
+                    android:layout_centerVertical="true"
+                    android:textSize="15sp"/>
+                <EditText
+                    android:id="@+id/etRegYear"
+                    android:layout_toRightOf="@id/tvDOB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="7dp"
+                    android:layout_marginTop="7dp"
+                    android:hint="YYYY"
+                    android:inputType="number"
+                    android:maxLength="4"/>
+                <TextView
+                    android:id="@+id/dash1"
+                    android:layout_toRightOf="@id/etRegYear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="7dp"
+                    android:layout_marginTop="7dp"
+                    android:text="-"
+                    android:textSize="20sp"/>
+                <EditText
+                    android:id="@+id/etRegMonth"
+                    android:layout_toRightOf="@id/dash1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="7dp"
+                    android:layout_marginTop="7dp"
+                    android:hint="MM"
+                    android:inputType="number"
+                    android:maxLength="2"/>
+                <TextView
+                    android:id="@+id/dash2"
+                    android:layout_toRightOf="@id/etRegMonth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="7dp"
+                    android:layout_marginTop="7dp"
+                    android:text="-"
+                    android:textSize="20sp"/>
+                <EditText
+                    android:id="@+id/etRegDay"
+                    android:layout_toRightOf="@id/dash2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="7dp"
+                    android:layout_marginTop="7dp"
+                    android:hint="DD"
+                    android:inputType="number"
+                    android:maxLength="2"/>
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/etRegRefNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:layout_marginTop="7dp"
+                android:hint="*Sudents&apos; Ref No."
+                android:inputType="number"
+                android:maxLength="8"/>
+
+            <Button
+                android:id="@+id/btRegProceed"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="7dp"
+                android:layout_marginTop="7dp"
+                android:text="Proceed"/>
+
+            <Button
+                android:id="@+id/btRegCancel"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="7dp"
+                android:layout_marginTop="7dp"
+                android:text="Cancel"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

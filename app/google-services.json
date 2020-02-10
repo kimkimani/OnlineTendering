@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "951011299670",
+    "firebase_url": "https://hostel-a0fd0.firebaseio.com",
+    "project_id": "hostel-a0fd0",
+    "storage_bucket": "hostel-a0fd0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:951011299670:android:5c47c6ca2471520a4086f7",
+        "android_client_info": {
+          "package_name": "atips.dmin.tipsscore.hostel_login"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "951011299670-3qqchnmdl6v3hbnb65ut5vo34e9152v4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuYaraKhLyG7vveYZllUqYt0v1M2xnJKU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "951011299670-3qqchnmdl6v3hbnb65ut5vo34e9152v4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
